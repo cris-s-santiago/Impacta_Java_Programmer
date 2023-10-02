@@ -4,4 +4,8 @@ public class Servico {
 
     private String descricao;
     private double preco;
+
+    public void registrarServico(){}
+    public void recuperarServico(){}
+
 }
