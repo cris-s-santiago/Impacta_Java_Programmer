@@ -6,11 +6,11 @@ public class TesteAluno {
 
         Aluno aluno = new Aluno();
 
-        aluno.nome = "Cristiane";
-        aluno.matricula = 123456789;
-        aluno.idade = 32;
+        aluno.setNome("Cristiane");
+        aluno.setMatricula(123456789);
+        aluno.setIdade(32);
 
-        System.out.println("Aluno(a): " + aluno.nome + "\nMatricula: " + aluno.matricula + "\nIdade: " + aluno.idade);
+        System.out.println("Aluno(a): " + aluno.getNome() + "\nMatricula: " + aluno.getMatricula() + "\nIdade: " + aluno.getIdade());
 
     }
 }
