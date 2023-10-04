@@ -23,4 +23,14 @@ public class Calculadora {
     public String concatenar (String texto1, String texto2){
         return texto1 + texto2;
     }
+
+
+    //6.9. Modificador static
+
+    public static double PI = 3.14;
+    public static String nome;
+
+    public static double somar (double valor1, double valor2){
+        return valor1 + valor2;
+    }
 }

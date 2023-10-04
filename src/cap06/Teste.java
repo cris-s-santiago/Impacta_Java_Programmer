@@ -26,6 +26,19 @@ public class Teste {
         System.out.println("**********************");
 
         aluno1.imprimir();
+
+        //6.9. Modificador static
+
+        System.out.println();
+        System.out.println("6.9. Modificador static");
+
+        Calculadora.nome = "Calcular";
+        double somar = Calculadora.somar(3.5, 3.8);
+        System.out.println(somar);
+
+        Calculadora.PI = 2.33;
+
+        System.out.println(Calculadora.PI);
     }
 
 }
