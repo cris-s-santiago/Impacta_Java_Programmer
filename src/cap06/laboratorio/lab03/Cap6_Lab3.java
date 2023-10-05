@@ -21,8 +21,5 @@ public class Cap6_Lab3 {
         marcos.imprimeAluno();
 
         System.out.println("Contador acessando diretamente da classe: "+Aluno.contadorDeAlunos);
-
-
-
     }
 }
