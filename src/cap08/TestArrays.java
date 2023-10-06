@@ -34,6 +34,11 @@ public class TestArrays {
         alunos[0].imprimir();
         System.out.println();
 
+
+        // Array anônimo
+        int[] array4 = new int[]{56, 30, 4, 10};
+
+
         int[] array2 = {56, 30, 4, 10}; // 4 elementos
         System.out.println("Percorrer um array unidimensional: ");
         for (int i = 0; i <= 3; i++) {
@@ -80,45 +85,73 @@ public class TestArrays {
         int[][][] notas = new int[3][2][3];
 
         //unidade-0 turma-0 aluno-(0,1,2)
-        notas[0][0][0] = 10;
-        notas[0][0][1] = 10;
-        notas[0][0][2] = 10;
+        notas[0][0][0] = 1;
+        notas[0][0][1] = 1;
+        notas[0][0][2] = 1;
 
         //unidade-0 turma-1 aluno-(0,1,2)
-        notas[0][1][0] = 10;
-        notas[0][1][1] = 10;
-        notas[0][1][2] = 10;
+        notas[0][1][0] = 2;
+        notas[0][1][1] = 2;
+        notas[0][1][2] = 2;
 
         //unidade-1 turma-0 aluno-(0,1,2)
-        notas[1][0][0] = 10;
-        notas[1][0][1] = 10;
-        notas[1][0][2] = 10;
+        notas[1][0][0] = 3;
+        notas[1][0][1] = 3;
+        notas[1][0][2] = 3;
 
         //unidade-1 turma-1 aluno-(0,1,2)
-        notas[1][1][0] = 10;
-        notas[1][1][1] = 10;
-        notas[1][1][2] = 10;
+        notas[1][1][0] = 4;
+        notas[1][1][1] = 4;
+        notas[1][1][2] = 4;
 
         //unidade-2 turma-0 aluno-(0,1,2)
-        notas[2][0][0] = 10;
-        notas[2][0][1] = 10;
-        notas[2][0][2] = 10;
+        notas[2][0][0] = 5;
+        notas[2][0][1] = 5;
+        notas[2][0][2] = 5;
 
         //unidade-2 turma-1 aluno-(0,1,2)
-        notas[2][1][0] = 10;
-        notas[2][1][1] = 10;
-        notas[2][1][2] = 10;
+        notas[2][1][0] = 6;
+        notas[2][1][1] = 6;
+        notas[2][1][2] = 6;
 
         System.out.println("Percorrer um array multidimensional: ");
         for (int x = 0; x < notas.length; x++) {
             for (int y = 0; y < notas[x].length; y++) {
-                for (int z = 0; z < notas[y].length; z++){
+                for (int z = 0; z < notas[x][y].length; z++) {
                     System.out.print(notas[x][y][z]);
                     System.out.print(" ");
                 }
+                System.out.println();
             }
             System.out.println();
         }
 
+
+        //For each
+
+        int[] array3 = {56, 30, 4, 10, 6}; // 5 elementos
+        System.out.println("Percorrer um array with for each: ");
+
+        for (int i : array3) {
+            System.out.println(i);
+        }
+
+        int resultado = 0;
+        for (int i : array3) {
+            resultado += i;
+        }
+        System.out.println();
+        System.out.println("Soma a cada iteraçao é: " + resultado);
+
+
+
+        // Array com args
+
+        System.out.println();
+        for (String i : args) {
+            System.out.println(i);
+        }
+
     }
+
 }
